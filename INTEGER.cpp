@@ -27,7 +27,7 @@ void INTEGER::operator<<(INTEGER a)
 
 void INTEGER::operator!()
 {
-    cout << to_string(this->numero);
+    cout << to_string(this->numero)<<endl;
 }
 
 INTEGER INTEGER::operator+(INTEGER sumando)
@@ -54,7 +54,7 @@ INTEGER INTEGER::operator*(INTEGER factor)
 INTEGER INTEGER::operator/(INTEGER divisor)
 {
     INTEGER respuesta;
-    int cociente = numero * divisor.getValue();
+    int cociente = numero / divisor.getValue();
     respuesta << cociente;
     return respuesta;
 }

@@ -32,5 +32,5 @@ STRING STRING::operator*(int repeticiones)
 }
 void STRING::operator!()
 {
-    cout << this->cadena;
+    cout << this->cadena<<endl;
 }

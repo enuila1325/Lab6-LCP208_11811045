@@ -21,6 +21,14 @@ void CHAR ::operator<<(char a)
 }
 void CHAR::operator!()
 {
-    cout<<this->caracter;
+    cout << this->caracter << endl;
 }
-
+STRING CHAR::operator+(CHAR agregar)
+{
+    STRING concatenacion;
+    string auxiliar = "";
+    auxiliar += caracter;
+    auxiliar += agregar.getChar();
+    concatenacion << auxiliar;
+    return concatenacion;
+}

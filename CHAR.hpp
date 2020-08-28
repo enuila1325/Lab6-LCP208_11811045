@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "STRING.hpp"
 
 using namespace std;
 #ifndef CHAR_H
@@ -13,11 +14,11 @@ private:
 public:
     CHAR();
     CHAR(char);
-    
+
     void operator<<(CHAR);
     void operator<<(char);
     void operator!();
-    CHAR operator+(CHAR);
+    STRING operator+(CHAR);
     char getChar();
 };
 
